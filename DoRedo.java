@@ -2,8 +2,6 @@ package saveload;
 
 import java.util.Stack;
 
-
-
 public class DoRedo {
 
 	BattleshipBoard spiller1;

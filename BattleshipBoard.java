@@ -23,12 +23,7 @@ public class BattleshipBoard {
 				if(celle == '.'||celle=='X'){
 					celle=' ';
 				}
-				//System.out.println(celle);
-				System.out.print(""+celle+"|_");
-				
-
-				//System.out.print(""+board[i][j]+"|_");
-				
+				System.out.print(""+celle+"|_");				
 			}
 			System.out.print("\n");
 		}

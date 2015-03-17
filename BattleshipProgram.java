@@ -52,16 +52,8 @@ public class BattleshipProgram {
 			}
 			
 			else if(valg.equals("y")){
-				int redotur=0;
-				if(tur==1){
-					redotur=2;
-				}
-				else if(tur==2){
-					redotur=1;
-				}
-				doRedo.reverseAction(doRedo.redo(), redotur);
 				byttTur();
-				
+				doRedo.reverseAction(doRedo.redo(), tur);				
 			}
 			
 			else if(valg.equals("s")){
@@ -79,9 +71,9 @@ public class BattleshipProgram {
 			}
 			
 			else if(checkInput(valg)==true){				
-				//
-				
+
 				doRedo.saveAction(valg);
+				
 				int y = Integer.parseInt(valg.split(" ")[1])-1;
 				int x = Integer.parseInt(valg.split(" ")[0])-1;
 				
@@ -123,11 +115,6 @@ public class BattleshipProgram {
 		else{
 			tur=1;
 		}
-	}
-	
-	public void Save(BattleshipBoard spiller1, BattleshipBoard spiller2){
-		//for celle i spiller1, spiller1= getCell[i][i] 
-		
 	}
 	
 	public static void main(String[] args){
